@@ -286,7 +286,7 @@ nav.shift ul li a {
     width:600px;
     margin: auto;
     margin-left: 300px; /* Adjust the right margin to move the image to the left */
-    margin-top: 16.3px;
+    margin-top: 7.2px;
     overflow: hidden; /* Ensure the image doesn't overflow */
     border-radius: 0%; /* Make it circular */
     opacity: 0; /* Initially set opacity to 0 to make it invisible */
@@ -300,7 +300,8 @@ nav.shift ul li a {
   width: 100%; /* Set the width of the image to 100% of its container */
   height: 100%; /* Let the height adjust proportionally based on the width */
   /* Additional styling properties can be added here */
-  filter: contrast(110%) brightness(110%);
+  filter: contrast(110%) brightness(110%) grayscale(100%);
+
 }
 
 @keyframes slideInimage {
@@ -345,12 +346,12 @@ nav.shift ul li a {
 
   .section__text__p1{
     text-align: center;
-  }
-  .section__text__p1{
-    font-size: 1.75rem;
     margin-bottom: 1rem;
+    font-size: 1.75rem;
+
+
   }
-  
+
 
   .title{
     font-size: 3rem;
@@ -456,3 +457,165 @@ nav.shift ul li a {
     visibility: visible;
     transform: scale(100) translateX(-2px);
   }
+
+ 
+
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically centered */
+    height: 100vh; /* Change the height as needed */
+    width: 100%; /* Set width to 100% */
+    background-image: url('https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg'); /* Specify your background image URL */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+  }
+  
+  .about-containers {
+    
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    overflow-x: hidden;
+  }
+
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column; /* Change to column */
+}
+
+  .about-pic {
+    border-radius: 2rem;
+    width: 400px;
+    height: 400px;
+    margin: 0 -300px;
+    margin-bottom: 20px;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: 0rem;
+    bottom: 2.5rem;
+  }
+  
+  .details-container_edu {
+    
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 0.1rem; /* Add margin bottom for spacing */
+    width: 250px; /* Adjust width as needed */
+  height: 150px; 
+    margin-left: 200px; /* Move boxes to the right */
+    overflow-x: hidden;
+    opacity: 0.5;
+
+  }
+
+
+  .details-container_exp {
+    
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-bottom: 0.1rem; /* Add margin bottom for spacing */
+    width: 250px; /* Adjust width as needed */
+  height: 150px; 
+    margin-left: 200px; /* Move boxes to the right */
+    overflow-x: hidden;
+
+    opacity: 0.5;
+    
+
+  }
+  
+  .section-container_about {
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .section__pic-container_about {
+    height: 20px;
+    width: 20px;
+    margin: auto 0;
+  }
+
+
+
+  @keyframes sliderin {
+    0% {
+      transform: translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-slider {
+  animation: sliderin 2s forwards; /* Adjust duration as needed */
+}
+
+
+.text-container {
+  position: absolute;
+  top: 80%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the text container */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Limit the maximum width if necessary */
+  text-align: center; /* Center-align the text */
+}
+
+.Auc-box {
+  display: none; /* Initially hide the Auc-box */
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: 110px; /* Adjust width as needed */
+  height: 30px;
+  position: absolute; /* Position the element relative to its closest positioned ancestor */
+  top: 360px; /* Adjust the top position */
+  left: 1225px; /* Adjust the left position */
+  opacity: 0.5;
+}
+
+.details-container_edu:nth-child(2):hover + .Auc-box {
+  display: block; /* Display the Auc-box when hovering over the education container */
+}
+
+.Auc-box img {
+  width: 130%; /* Set the width of the image to 100% of its container */
+  height: 130%; /* Set the height of the image to 100% of its container */
+  margin-left: -13px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+
+.section__text__p1_about{
+  text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+
+
+}
+

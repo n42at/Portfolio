@@ -85,3 +85,6 @@ const aucIcon = document.querySelector('.AUC_icon');
 aucIcon.addEventListener('click', () => {
   window.open('https://www.aucegypt.edu/', '_blank');
 });
+
+
+
